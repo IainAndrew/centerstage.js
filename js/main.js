@@ -1,5 +1,5 @@
 var $container = $('#hovercont'),
-    $items = $container.children('.hover-item');
+    $items = $container.find('.hover-item');
  
 $items.on( 'mouseenter', function(e) {  
     var $item = $(this);

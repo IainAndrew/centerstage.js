@@ -45,11 +45,11 @@
 
 /* Hover Style for single item: scale up */
 .hovercont .hover-item.active{
-	-webkit-transform: scale(1.05);
-	-moz-transform: scale(1.05);
-	-o-transform: scale(1.05);
-	-ms-transform: scale(1.05);
-	transform: scale(1.05);
+	-webkit-transform: scale(1.07);
+	-moz-transform: scale(1.07);
+	-o-transform: scale(1.07);
+	-ms-transform: scale(1.07);
+	transform: scale(1.07);
 	z-index: 100;	
 	opacity: 1;
 }
