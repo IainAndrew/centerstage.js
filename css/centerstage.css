@@ -3,19 +3,25 @@
 	-webkit-backface-visibility: hidden;
 	-webkit-transition: 
 		opacity 0.5s linear, 
-		-webkit-transform 0.5s ease-in-out;
+		-webkit-transform 0.5s ease-in-out,
+		filter 0.5s linear,
+		-webkit-filter 0.5s linear;
 	-moz-transition: 
 		opacity 0.5s linear, 
-		-moz-transform 0.5s ease-in-out;
+		-moz-transform 0.5s ease-in-out,
+		filter 0.5s linear;
 	-o-transition: 
 		opacity 0.5s linear, 
-		-o-transform 0.5s ease-in-out;
+		-o-transform 0.5s ease-in-out,
+		filter: 0.5s linear;
 	-ms-transition: 
 		opacity 0.5s linear, 
-		-ms-transform 0.5s ease-in-out;
+		-ms-transform 0.5s ease-in-out,
+		filter: 0.5s linear;
 	transition: 
 		opacity 0.5s linear, 
-		transform 0.5s ease-in-out;
+		transform 0.5s ease-in-out,
+		filter: 0.5s linear;
 }
 /* Hover Style for all the items: blur, scale down*/
 .centerstage .cs-item.inactive{
