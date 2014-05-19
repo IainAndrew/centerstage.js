@@ -2,7 +2,8 @@
 	$.fn.centerStage = function() {
 		var $container = $(this),
 	    $items = $container.find('.cs-item');
-	 
+	 	
+	 	$container.addClass('centerstage');
 		$items.on( 'mouseenter', function(e) {  
 		    var $item = $(this);
 		    $(function() { 
