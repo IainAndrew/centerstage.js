@@ -1,34 +1,21 @@
-.hovercont:before, .hovercont:after {
-    content:"";
-    display:table;
-}
-.hovercont:after {
-    clear:both;
-}
 .hovercont .hover-item{
 	float: left;
 	-webkit-backface-visibility: hidden;
 	-webkit-transition: 
 		opacity 0.5s linear, 
-		-webkit-transform 0.5s ease-in-out, 
-		box-shadow 0.5s ease-in-out;
+		-webkit-transform 0.5s ease-in-out;
 	-moz-transition: 
 		opacity 0.5s linear, 
-		-moz-transform 0.5s ease-in-out, 
-		box-shadow 0.5s ease-in-out;
+		-moz-transform 0.5s ease-in-out;
 	-o-transition: 
 		opacity 0.5s linear, 
-		-o-transform 0.5s ease-in-out, 
-		box-shadow 0.5s ease-in-out;
+		-o-transform 0.5s ease-in-out;
 	-ms-transition: 
 		opacity 0.5s linear, 
-		-ms-transform 0.5s ease-in-out, 
-		box-shadow 0.5s ease-in-out;
+		-ms-transform 0.5s ease-in-out;
 	transition: 
 		opacity 0.5s linear, 
-		transform 0.5s ease-in-out, 
-		box-shadow 0.5s ease-in-out;
-
+		transform 0.5s ease-in-out;
 }
 /* Hover Style for all the items: blur, scale down*/
 .hovercont .hover-item.inactive{
