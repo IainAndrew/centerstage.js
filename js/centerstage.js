@@ -1,7 +1,7 @@
 (function($) {
 	$.fn.centerStage = function() {
 		var $container = $(this),
-	    $items = $container.find('.hover-item');
+	    $items = $container.find('.cs-item');
 	 
 		$items.on( 'mouseenter', function(e) {  
 		    var $item = $(this);

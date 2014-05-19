@@ -1,4 +1,4 @@
-.centerstage .hover-item{
+.centerstage .cs-item{
 	float: left;
 	-webkit-backface-visibility: hidden;
 	-webkit-transition: 
@@ -18,7 +18,7 @@
 		transform 0.5s ease-in-out;
 }
 /* Hover Style for all the items: blur, scale down*/
-.centerstage .hover-item.inactive{
+.centerstage .cs-item.inactive{
 	-webkit-transform: scale(0.85);
 	-moz-transform: scale(0.85);
 	-o-transform: scale(0.85);
@@ -31,7 +31,7 @@
 }
 
 /* Hover Style for single item: scale up */
-.centerstage .hover-item.active{
+.centerstage .cs-item.active{
 	-webkit-transform: scale(1.07);
 	-moz-transform: scale(1.07);
 	-o-transform: scale(1.07);
