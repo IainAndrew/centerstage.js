@@ -1,3 +1,4 @@
+/*
 var $container = $('#hovercont'),
     $items = $container.find('.hover-item');
  
@@ -12,4 +13,10 @@ $items.on( 'mouseenter', function(e) {
  
 $container.on( 'mouseleave', function(e) {
     $items.removeClass('active inactive');
+});
+*/
+
+$(function() {
+    $(".section-top").centerStage();
+    $(".section-bottom").centerStage();
 });

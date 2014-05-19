@@ -1,4 +1,4 @@
-.hovercont .hover-item{
+.centerstage .hover-item{
 	float: left;
 	-webkit-backface-visibility: hidden;
 	-webkit-transition: 
@@ -18,7 +18,7 @@
 		transform 0.5s ease-in-out;
 }
 /* Hover Style for all the items: blur, scale down*/
-.hovercont .hover-item.inactive{
+.centerstage .hover-item.inactive{
 	-webkit-transform: scale(0.85);
 	-moz-transform: scale(0.85);
 	-o-transform: scale(0.85);
@@ -31,7 +31,7 @@
 }
 
 /* Hover Style for single item: scale up */
-.hovercont .hover-item.active{
+.centerstage .hover-item.active{
 	-webkit-transform: scale(1.07);
 	-moz-transform: scale(1.07);
 	-o-transform: scale(1.07);
