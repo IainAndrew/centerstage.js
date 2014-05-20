@@ -4,6 +4,9 @@
 	    $items = $container.find('.cs-item');
 	 	
 	 	$container.addClass('centerstage');
+	 	if ($items.length == 0) {
+	 		$container.children().addClass('.cs-item');
+	 	}
 		$items.on( 'mouseenter', function(e) {  
 		    var $item = $(this);
 		    $(function() { 
