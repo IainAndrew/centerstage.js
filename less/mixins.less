@@ -1,0 +1,35 @@
+.transition (@duration) {
+	-webkit-transition: 
+		opacity @duration linear, 
+		-webkit-transform @duration ease-in-out,
+		filter @duration linear,
+		-webkit-filter @duration linear;
+	-moz-transition: 
+		opacity @duration linear, 
+		-moz-transform @duration ease-in-out,
+		filter @duration linear;
+	-o-transition: 
+		opacity @duration linear, 
+		-o-transform @duration ease-in-out;
+		
+	-ms-transition: 
+		opacity @duration linear, 
+		-ms-transform @duration ease-in-out;
+		
+	transition: 
+		opacity @duration linear, 
+		transform @duration ease-in-out;
+		
+}
+.transform (@value) {
+	-webkit-transform: scale(@value);
+	-moz-transform: scale(@value);
+	-o-transform: scale(@value);
+	-ms-transform: scale(@value);
+	transform: scale(@value);
+}
+.blur {
+	-webkit-filter: blur(2px);
+  	filter: blur(2px);
+  	filter:url("blur.svg#blur");
+}

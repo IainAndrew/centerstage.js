@@ -1,0 +1,24 @@
+.centerstage {
+	.cs-item {
+		-webkit-backface-visibility: hidden;
+		&.inactive {
+			opacity:0.5;
+			.transform(0.85);
+			.blur;
+		}
+		&.active {
+			opacity:1;
+			z-index:1000;
+			.transform(1.07);
+		}
+		&.fast {
+			.transition(0.2s);
+		}
+		&.medium {
+			.transition(0.5s);
+		}
+		&.slow {
+			.transition(0.8s);
+		}
+	}
+}

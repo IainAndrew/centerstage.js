@@ -1,48 +1,49 @@
-.centerstage .cs-item{
-	/*(float: left;*/
-	-webkit-backface-visibility: hidden;
-	-webkit-transition: 
-		opacity 0.5s linear, 
-		-webkit-transform 0.5s ease-in-out,
-		filter 0.5s linear,
-		-webkit-filter 0.5s linear;
-	-moz-transition: 
-		opacity 0.5s linear, 
-		-moz-transform 0.5s ease-in-out,
-		filter 0.5s linear;
-	-o-transition: 
-		opacity 0.5s linear, 
-		-o-transform 0.5s ease-in-out,
-		filter: 0.5s linear;
-	-ms-transition: 
-		opacity 0.5s linear, 
-		-ms-transform 0.5s ease-in-out,
-		filter: 0.5s linear;
-	transition: 
-		opacity 0.5s linear, 
-		transform 0.5s ease-in-out,
-		filter: 0.5s linear;
+.blur {
+  -webkit-filter: blur(2px);
+  filter: blur(2px);
+  filter: url("blur.svg#blur");
 }
-/* Hover Style for all the items: blur, scale down*/
-.centerstage .cs-item.inactive{
-	-webkit-transform: scale(0.85);
-	-moz-transform: scale(0.85);
-	-o-transform: scale(0.85);
-	-ms-transform: scale(0.85);
-	transform: scale(0.85);
-	opacity: 0.5;
-	-webkit-filter: blur(2px);
-  	filter: blur(2px);
-  	filter:url("blur.svg#blur");
+.centerstage .cs-item {
+  -webkit-backface-visibility: hidden;
 }
-
-/* Hover Style for single item: scale up */
-.centerstage .cs-item.active{
-	-webkit-transform: scale(1.07);
-	-moz-transform: scale(1.07);
-	-o-transform: scale(1.07);
-	-ms-transform: scale(1.07);
-	transform: scale(1.07);
-	z-index: 100;	
-	opacity: 1;
+.centerstage .cs-item.inactive {
+  opacity: 0.5;
+  -webkit-transform: scale(0.85);
+  -moz-transform: scale(0.85);
+  -o-transform: scale(0.85);
+  -ms-transform: scale(0.85);
+  transform: scale(0.85);
+  -webkit-filter: blur(2px);
+  filter: blur(2px);
+  filter: url("blur.svg#blur");
+}
+.centerstage .cs-item.active {
+  opacity: 1;
+  z-index: 1000;
+  -webkit-transform: scale(1.07);
+  -moz-transform: scale(1.07);
+  -o-transform: scale(1.07);
+  -ms-transform: scale(1.07);
+  transform: scale(1.07);
+}
+.centerstage .cs-item.fast {
+  -webkit-transition: opacity 0.2s linear, -webkit-transform 0.2s ease-in-out, filter 0.2s linear, -webkit-filter 0.2s linear;
+  -moz-transition: opacity 0.2s linear, -moz-transform 0.2s ease-in-out, filter 0.2s linear;
+  -o-transition: opacity 0.2s linear, -o-transform 0.2s ease-in-out;
+  -ms-transition: opacity 0.2s linear, -ms-transform 0.2s ease-in-out;
+  transition: opacity 0.2s linear, transform 0.2s ease-in-out;
+}
+.centerstage .cs-item.medium {
+  -webkit-transition: opacity 0.5s linear, -webkit-transform 0.5s ease-in-out, filter 0.5s linear, -webkit-filter 0.5s linear;
+  -moz-transition: opacity 0.5s linear, -moz-transform 0.5s ease-in-out, filter 0.5s linear;
+  -o-transition: opacity 0.5s linear, -o-transform 0.5s ease-in-out;
+  -ms-transition: opacity 0.5s linear, -ms-transform 0.5s ease-in-out;
+  transition: opacity 0.5s linear, transform 0.5s ease-in-out;
+}
+.centerstage .cs-item.slow {
+  -webkit-transition: opacity 0.8s linear, -webkit-transform 0.8s ease-in-out, filter 0.8s linear, -webkit-filter 0.8s linear;
+  -moz-transition: opacity 0.8s linear, -moz-transform 0.8s ease-in-out, filter 0.8s linear;
+  -o-transition: opacity 0.8s linear, -o-transform 0.8s ease-in-out;
+  -ms-transition: opacity 0.8s linear, -ms-transform 0.8s ease-in-out;
+  transition: opacity 0.8s linear, transform 0.8s ease-in-out;
 }
