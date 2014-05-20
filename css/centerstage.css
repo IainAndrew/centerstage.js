@@ -1,5 +1,5 @@
 .centerstage .cs-item{
-	float: left;
+	/*(float: left;*/
 	-webkit-backface-visibility: hidden;
 	-webkit-transition: 
 		opacity 0.5s linear, 
