@@ -18,7 +18,8 @@ $container.on( 'mouseleave', function(e) {
 
 $(function() {
     $(".section-top").centerStage({
-        duration : 'fast'
+        duration : 'fast',
+        grayscale : true
     });
     $(".section-bottom").centerStage({
         duration : 'slow'

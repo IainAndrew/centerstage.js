@@ -1,7 +1,8 @@
 (function($) {
 	$.fn.centerStage = function(options) {
 		var defaults = {
-            duration : 'medium'
+            duration : 'medium',
+            grayscale : false
         }, 
         options = $.extend(defaults, options),
 		$container = $(this),
