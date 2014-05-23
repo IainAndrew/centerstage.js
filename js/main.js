@@ -17,6 +17,10 @@ $container.on( 'mouseleave', function(e) {
 */
 
 $(function() {
-    $(".section-top").centerStage(medium);
-    $(".section-bottom").centerStage(fast);
+    $(".section-top").centerStage({
+        duration : 'fast'
+    });
+    $(".section-bottom").centerStage({
+        duration : 'slow'
+    });
 });

@@ -1,17 +1,27 @@
-var medium = 'medium';
-var fast = 'fast';
-var slow = 'slow';
-
 (function($) {
-	$.fn.centerStage = function(duration) {
-		var $container = $(this),
+	$.fn.centerStage = function(options) {
+		var defaults = {
+            duration : 'medium'
+        }, 
+        options = $.extend(defaults, options),
+		$container = $(this),
 	    $items = $container.find('.cs-item');
 	 	
-	 	$container.addClass('centerstage');
-	 	$items.addClass(duration);
-	 	if ($items.length == 0) {
-	 		$container.children().addClass('.cs-item');
-	 	}
+	    $(function() {
+	    	$container.addClass('centerstage');
+	    	if ($items.length == 0) {
+		 		$container.children().addClass('.cs-item');
+		 	}
+	    });
+	 	$(function() {
+	 		if (options.duration == 'medium') {
+	 			$items.addClass('medium');
+	 		} else if (options.duration == 'fast') {
+	 			$items.addClass('fast');
+	 		} else if (options.duration == 'slow') {
+	 			$items.addClass('slow');
+	 		}
+	 	});
 		$items.on( 'mouseenter', function(e) {  
 		    var $item = $(this);
 		    $(function() { 
